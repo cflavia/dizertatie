@@ -1,6 +1,3 @@
-from io import StringIO
-
-from docutils.transforms import components
 from matplotlib import pyplot as plt
 from sklearn import metrics
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
@@ -43,23 +40,6 @@ st.markdown(
 
 def get_data():
     return pd.read_csv('https://raw.githubusercontent.com/tipemat/datasethoracic/main/DateToracic.csv',header = 0)
-
-def get_data_filter():
-    return pd.read_csv('https://raw.githubusercontent.com/tipemat/datasethoracic/main/DateToracic.csv',header = 0)
-
-def load_data_map():
-    data = pd.read_csv('resources/covid.csv')
-    data['date'] = pd.to_datetime(data['date']).dt.strftime('%Y-%m-%d')
-    return data
-
-def st_shap(plot, height=None):
-    shap_html = f"<head>{shap.getjs()}</head><body>{plot.html()}</body>"
-    components.html(shap_html, height=height)
-
-def get_data_predict():
-    return pd.read_csv('resources/diabetes_data_upload.csv')
-
-
 
 
 data = get_data()
