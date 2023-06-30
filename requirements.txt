@@ -1,8 +1,7 @@
 matplotlib
 scikit-learn
 seaborn
-shap
-lime
+lime==0.1.1.36
 imblearn
 tensorflow
 keras
