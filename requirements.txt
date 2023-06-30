@@ -10,4 +10,5 @@ streamlit
 pandas
 numpy
 IPython
+qrcode
 click==8
