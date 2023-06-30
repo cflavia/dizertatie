@@ -8,6 +8,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
+from lime import lime_tabular
 
 import lime
 import numpy as np
