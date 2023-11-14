@@ -790,10 +790,11 @@ not choose_urologyDataset))):
     st.write(
 
         "Background: Lung cancers are the most common worldwide and prostate cancers are among the second as frequency, diagnosed in men. The automatic ranking in the risk groups of such diseases is highly in demand, but the clinical practice showed us that for a sensitive screening of the clinical parameters with an artificial intelligence system, a customary defined deep neural network classifier is not sufficient given the usually small size medical datasets."
-        "\n"
+        "\n\n"
         "Methods: In this paper, we propose a new management of method of cancer risk groups management based on a supervised neural network model that is further enhanced by using an features-attention mecha-nism, in order to boost its level of accuracy. For the analysis of each clinical parameter, we used Local Interpretable Model-Agnostic Explanations, which is a post-hoc model agnostic technique that outlines features importance. After that, we applied the attention mechanism in order to obtain a higher weight after training. We have tested the method on two datasets, one for binary-class in case of thoracic cancer and one for the multi-class classification in case of urology cancers to show the wide availability and versatility of the method."
-        "\n"
+        "\n\n"
         "Results: The accuracy of the models trained in this way, reached the value of more than 80% for both clinical tasks."
+        "\n"
         "\n"
         "Conclusions: Our ex-periments demonstrate that by using explainability results as feedback signals in conjunction with the attention mechanism, we were able to increase the accuracy of the base model with more than 20% on small medical datasets, reaching a critical threshold for providing recommendations based on the collected clinical parameters."
     )
