@@ -786,23 +786,16 @@ if choose_modelClient:
 
 if (btn_afis_general or ((not choose_MecanismAtentie) and (not choose_tabel) and (not choose_modelClient) and (
 not choose_urologyDataset))):
-    st.title("Machine learning model for chest diagnosis improved through explainability methods.")
+    st.title("Machine learning model for improving the management of cancer risk groups through explainability methods.")
     st.write(
 
-        "Chest problems are medical conditions that affect the thoracic area of the body, which is the region behind "
-        "the sternum, encompassing the heart, lungs, trachea, bronchial tubes, esophagus, and other structures of the "
-        "respiratory and cardiovascular systems. These problems can be caused by a variety of conditions such as"
-        " respiratory infections, pulmonary diseases, heart conditions, autoimmune diseases, or anxiety disorders, "
-        "and they can vary in terms of symptoms and the severity of the issue."
+        "Background: Lung cancers are the most common worldwide and prostate cancers are among the second as frequency, diagnosed in men. The automatic ranking in the risk groups of such diseases is highly in demand, but the clinical practice showed us that for a sensitive screening of the clinical parameters with an artificial intelligence system, a customary defined deep neural network classifier is not sufficient given the usually small size medical datasets."
         "\n"
-        "In this application, I want to present a machine learning model that is trained for predicting these"
-        " issues and increasing accuracy rates through the use of explainability methods."
-        " I have chosen to use the attention mechanism to obtain a higher weight after training the dataset."
+        "Methods: In this paper, we propose a new management of method of cancer risk groups management based on a supervised neural network model that is further enhanced by using an features-attention mecha-nism, in order to boost its level of accuracy. For the analysis of each clinical parameter, we used Local Interpretable Model-Agnostic Explanations, which is a post-hoc model agnostic technique that outlines features importance. After that, we applied the attention mechanism in order to obtain a higher weight after training. We have tested the method on two datasets, one for binary-class in case of thoracic cancer and one for the multi-class classification in case of urology cancers to show the wide availability and versatility of the method."
         "\n"
-        "The model's accuracy has reached approximately 80%. To analyze and explain each feature, I have chosen "
-        "to use LIME (Local Interpretable Model-Agnostic Explanations), which is a method for interpreting"
-        " machine learning models, presenting the decisions made by a model."
+        "Results: The accuracy of the models trained in this way, reached the value of more than 80% for both clinical tasks."
         "\n"
+        "Conclusions: Our ex-periments demonstrate that by using explainability results as feedback signals in conjunction with the attention mechanism, we were able to increase the accuracy of the base model with more than 20% on small medical datasets, reaching a critical threshold for providing recommendations based on the collected clinical parameters."
     )
 
 st.sidebar.write('')
